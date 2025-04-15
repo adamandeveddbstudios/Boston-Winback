@@ -23,22 +23,19 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.set(['#h1, #h2'], {y:"20px"})
-  tl.set(['#man'], {x:"300px"})
-  tl.set(['#man'], {x:"300px"})
-  tl.set(['#plane'], {x:"-290px", y:"40px"})
+  tl.set(['#movie1, #screen1'], {x:"300px"})
+  tl.set(['#screen2'], {x:"140px"})
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
-  .to('#man', 2, { x: "0", ease: Power1.easeOut}, 'frame1')
-  
+  .to('#movie1', 0.5, { autoAlpha: 1, x: "0", ease: Power1.easeOut}, 'frame1+=0.5')
+  .to('#screen1', 0.5, { autoAlpha: 1, x: "0", ease: Power1.easeOut}, '<')
   .addLabel('frame2', '5')
   .to('#h1', 0.5, { autoAlpha: 0, y:"20px", ease: Power1.easeOut }, "frame2")
-  .to('#man', 0, { autoAlpha: 0, ease: Power1.easeOut}, 'frame2')
-  .to('#main_container',{ backgroundColor: '#00e1ff'}, '<')
+  .to('#screen2', 0.5, { autoAlpha: 1, x: "0", ease: Power1.easeOut}, '>')
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
-  .to('#cloud1', 0.7, { x:'-23px', autoAlpha: 1, ease: Power1.easeOut}, '<')
-  .to('#cloud2', 0.7, { x:'31px', autoAlpha: 1, ease: Power1.easeOut}, '<')
-  .to('#plane', 1, { autoAlpha: 1, x: "0", y: "0", ease: Power1.easeOut}, '<')
+  .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut }, "frame2+=2")
+
 }
 
 function setRollover() {
@@ -60,6 +57,6 @@ function init() {
 
   animate();
   setRollover();
-
+		
 }
 

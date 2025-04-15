@@ -23,17 +23,17 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.set(['#h1, #h2'], {y:"20px"})
-  tl.set(['#movie1'], {x:"140px"})
-  tl.set(['#movie2'], {x:"-125px"})
+  tl.set(['#movie1, #screen1'], {x:"280px"})
+  tl.set(['#screen2'], {x:"140px"})
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
   .to('#movie1', 0.5, { autoAlpha: 1, x: "0", ease: Power1.easeOut}, 'frame1+=0.5')
+  .to('#screen1', 0.5, { autoAlpha: 1, x: "0", ease: Power1.easeOut}, '<')
   .addLabel('frame2', '5')
   .to('#h1', 0.5, { autoAlpha: 0, y:"20px", ease: Power1.easeOut }, "frame2")
-  .to('#movie1', 0.5, { autoAlpha: 0, x:"140px", ease: Power1.easeOut }, "<")
+  .to('#screen2', 0.5, { autoAlpha: 1, x: "0", ease: Power1.easeOut}, '>')
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
-  .to('#movie2', 0.5, { autoAlpha: 1, x: "0", ease: Power1.easeOut }, "<")
   .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut }, "frame2+=2")
 
 }
