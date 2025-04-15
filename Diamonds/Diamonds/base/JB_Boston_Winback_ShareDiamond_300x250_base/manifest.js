@@ -5,10 +5,10 @@ FT.manifest({
     "clickTagCount": 1,
     "hideBrowsers": ["ie8"],
     "richloads": [
- 		{"name":"main_rl", "src":"JB_Boston_Winback_Dunkin_300x250_RL"}
+ 		{"name":"main_rl", "src":"JB_Boston_Winback_ShareDiamond_300x250_RL"}
  	],
     "instantAds": [
-        {"name":"main_rl",          "type":"richload"},
+        {"name":"main_rl",          "type":"richload"}, 
         {"name":"clickTag1_url",    "type":"text", "default":"http://www.landingpageurl.com/?blahblah"}
     ]
 });
