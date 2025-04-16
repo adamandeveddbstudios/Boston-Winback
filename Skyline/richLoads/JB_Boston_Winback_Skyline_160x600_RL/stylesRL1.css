@@ -47,8 +47,8 @@ video {
 #default_exit {
   top: -1px;
   left: -1px;
-  width: 300px;
-  height: 250px;
+  width: 160px;
+  height: 600px;
   z-index: 500;
   cursor: pointer;
 }
