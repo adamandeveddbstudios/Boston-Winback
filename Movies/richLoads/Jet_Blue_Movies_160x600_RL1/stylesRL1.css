@@ -44,11 +44,12 @@ video {
   opacity: 0;
 }
 
+
 #default_exit {
   top: -1px;
   left: -1px;
-  width: 300px;
-  height: 250px;
+  width: 160px;
+  height: 600px;
   z-index: 500;
   cursor: pointer;
 }
@@ -75,11 +76,6 @@ video {
   font-weight: normal;
 }
 
-
-#Layer_2{
-  transform: scale(3.9) translate(18.5px, 69px);
-  will-change: transform;
-}
 
 /* Text */
 
@@ -118,7 +114,9 @@ video {
   position: absolute;
   left: 12.5px;
   font-family: "ESKlarheitGrotesk Smbd";
+  font-weight: 500;
 }
+
 
 #h3{
   font-size: 17px;
