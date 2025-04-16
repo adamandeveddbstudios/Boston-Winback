@@ -77,10 +77,17 @@ video {
   font-weight: normal;
 }
 
-
+svg {
+  image-rendering: optimizeQuality;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
 #Layer_2 {
   transform: scale(1.59) translate(36.5px, -6px);
-  will-change: transform;
+  /* will-change: transform; */
+  transform-origin: center center;
+  backface-visibility: hidden;
 }
 
 /* Text */

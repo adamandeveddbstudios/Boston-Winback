@@ -23,14 +23,15 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.set(['#h1, #h2'], {y:"20px"})
-
+  tl.set("#Layer_2", { transformOrigin: "50% 50%", force3D: false});
+  
   tl.addLabel('frame1', 0)
     .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
 
     .staggerTo([".cls-1, .cls-3"],0, {opacity:0.2,fill: '#c9c9c9', ease: "bounce.in" }, 0.015,'frame1')
     .staggerTo('.cls-6',0, {fill: '#00e1ff', ease: "bounce.in" }, 0.009, 'frame1')
 
-  .to('#Layer_2', 3, {scale:1.25, transform: "translate3d(1px, 199px, 0)", rotationZ:0.1, force3D: true,  ease: "power1.in" }, 1, 'frame1+=4')
+  .to('#Layer_2', 3, {scale:1.25, x: '1px', y:'199px', rotationZ:0.1,  ease: "power1.in" }, 1, 'frame1+=4')
 
 
   .addLabel('frame2', 'frame1+=5')

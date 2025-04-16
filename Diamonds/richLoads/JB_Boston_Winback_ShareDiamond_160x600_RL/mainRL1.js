@@ -23,7 +23,7 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.set(['#h1, #h2'], {y:"20px"})
-
+  tl.set("#Layer_2", { transformOrigin: "50% 50%", force3D: false});
   tl.addLabel('frame1', 0)
     .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
 
@@ -32,7 +32,7 @@ function animate() {
 
 
     .addLabel('frame2', 3)
-    .to('#Layer_2', 3, {scale:2.35, transform: "translate3d(44px, 279px, 0)", rotationZ:0.1, force3D: true,  ease: "power1.in" }, "frame2+=.1")
+    .to('#Layer_2', 3, {scale:2.35, x: '44px', y: '279px', rotationZ:0.1, ease: "power1.in" }, "frame2+=.1")
     .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
     .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=3")
     .to('#desc,#desc1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=4")

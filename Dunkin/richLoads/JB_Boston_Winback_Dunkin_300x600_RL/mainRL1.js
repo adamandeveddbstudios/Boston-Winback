@@ -26,8 +26,8 @@ function animate() {
 
   tl.addLabel('frame1', 0)
     .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
-    .to(['#backgroundClouds'], 15, { x: -264, ease: "none" }, 'frame1')
-    .to(['#foregroundClouds'], 15, { x: -220, ease: "none" }, 'frame1')
+    .to(['#backgroundClouds'], 10, { x: -264, ease: "none" }, 'frame1')
+    .to(['#foregroundClouds'], 10, { x: -220, ease: "none" }, 'frame1')
     .addLabel('frame2', '5')
     .to('#h1', 0.5, { autoAlpha: 0, y:"20px", ease: Power1.easeOut }, "frame2")
     .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")

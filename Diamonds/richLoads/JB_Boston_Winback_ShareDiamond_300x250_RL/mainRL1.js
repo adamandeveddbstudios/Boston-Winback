@@ -24,14 +24,16 @@ function animate() {
 
   tl.set(['#h1, #h2'], {y:"20px"})
 
+  tl.set("#Layer_2", { transformOrigin: "50% 50%", force3D: false});
+
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
   
   .staggerTo('.cls-6',0, {fill: '#00e1ff', ease: "bounce.in" }, 0.01, 'frame1')
   .staggerTo([".cls-1, .cls-2"],0, {fill: '#00a', ease: "bounce.in" }, 0.009, '<')
   
-  .to('#Layer_2', 3, {scale:0.96, transform: "translate3d(72px, -94px, 0)", rotationZ:0.1, force3D: true,  ease: "power1.in" }, 1, 'frame1+=4')
-  
+  .to('#Layer_2', 3, {scale: 0.96, x: 72, y: -94, rotation: 0.1, force3D: false, ease: "power1.in"}, 'frame1+=2.5')
+
 
   .addLabel('frame2', 'frame1+=5')
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
