@@ -23,7 +23,7 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.set(['#h1, #h2'], {y:"20px"})
-  tl.set(['#man'], {x:"300px"})
+  tl.set(['#man'], {x:"250px"})
   tl.set(['#cloud1'], {x:"100px", y:"-30px"})
   tl.set(['#cloud2'], {x:"100px", y:"-30px"})
   tl.set(['#plane'], {x:"-290px", y:"40px"})
@@ -31,15 +31,15 @@ function animate() {
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
-  .to('#man', 2, { x: "-28", ease: Power1.easeOut}, 'frame1')
+  .to('#man', 2, { x: "-75", ease: Power1.easeOut}, 'frame1')
   
   .addLabel('frame2', '5')
   .to('#h1', 0.5, { autoAlpha: 0, y:"20px", ease: Power1.easeOut }, "frame2")
   .to('#man', 0, { autoAlpha: 0, ease: Power1.easeOut}, 'frame2')
   .to('#main_container',{ backgroundColor: '#00e1ff'}, '<')
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
-  .to('#cloud1', 0.7, { x:'0px', y:"0", autoAlpha: 1, ease: Power1.easeOut}, '<')
-  .to('#cloud2', 0.7, { x:'0px', y: '0', autoAlpha: 1, ease: Power1.easeOut}, '<')
+  .to('#cloud1', 0.7, { x:'-20px', y:"0", autoAlpha: 1, ease: Power1.easeOut}, '<')
+  .to('#cloud2', 0.7, { x:'10px', y: '0', autoAlpha: 1, ease: Power1.easeOut}, '<')
   .to('#plane', 1, { autoAlpha: 1, x: "0", y: "0", ease: Power1.easeOut}, '<')
   .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut }, "frame2+=2")
 }

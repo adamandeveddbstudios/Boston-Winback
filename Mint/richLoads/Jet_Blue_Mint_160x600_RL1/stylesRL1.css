@@ -27,7 +27,7 @@ video {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 300px;
+  width: 160px;
   height: 600px;
 }
 
@@ -35,7 +35,7 @@ video {
   position: absolute;
   top: -1px;
   left: -1px;
-  width: 300px;
+  width: 160px;
   height: 600px;
 }
 
@@ -47,7 +47,7 @@ video {
 #default_exit {
   top: -1px;
   left: -1px;
-  width: 300px;
+  width: 160px;
   height: 600px;
   z-index: 500;
   cursor: pointer;
@@ -86,28 +86,32 @@ video {
 #text_holder {
   color: #0000aa;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 30.5px;
-  line-height: 32px;
+  font-size: 23.5px;
+  line-height: 25px;
 }
 #h1,
 #h2,
 #h3 {
-  width: 280px;
+  width: 200px;
   left: 17px;
-  top: 67px;
+  top: 38px;
 }
 
 #h2{
-  line-height: 32px;
-  top: 39px;
+  line-height: 25px;
+  top: 38px;
 }
 #h2 sup{
   vertical-align: middle;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 0;
-  margin-top: -20px;
+  margin-top: -14px;
   display: inline-block;
 }
+#h2 .letter{
+  letter-spacing: -0.7px;
+}
+
 
 #h2 .small{
   font-size: 9.6px;
@@ -123,21 +127,12 @@ video {
 }
 #h3{
   font-size: 16.3px;
-  top: 388px;
+  top: 391px;
   font-family: "ESKlarheitGrotesk Smbd";
 }
-
-#endframeBg {
-  position: absolute;
-  top: 170px;
-  height: 600px;
-  width: 100%;
-  background: #FFFFFF;
-}
-
 #pinkRibbon {
   position: absolute;
-  bottom: 132px;
+  bottom: 140px;
   height: 10px;
   width: 100%;
   background: #00dcaa;
@@ -145,67 +140,42 @@ video {
 
 #blueBottomCard {
   background-color: #0000aa;
-  width: 300px;
-  height: 132px;
+  width: 160px;
+  height: 140px;
   left: 0px;
-  bottom: 0px;
+  top: 460px;
 }
 
-
-
 #logo {
-  width: 104px;
+  width: 81px;
   height: auto;
-  left: 21px;
-  bottom: 60px;
+  left: 41px;
+  top: 487px;
   position: absolute;
   z-index: 11;
 }
 
 #cta {
-  width: 108px;
-  height: 31px;
-  bottom: 62px;
-  left: 171px;
+  width: 84px;
+  height: 28px;
+  top: 529px;
+  left: 38px;
   background-color: #00dcaa;
   border-radius: 5px;
   font-family: "ESKlarheitGrotesk Xbd";
   color: #0000aa;
-  font-size: 13.5px;
+  font-size: 12.5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.window{
-  width: 300px;
-  height: 600px;
-}
-
-#backgroundClouds{
-  top: 55px;
-  transform-origin: 0%;
-  transform: translateX(200px);
-}
-#foregroundClouds{
-  top: 122px;
-  transform-origin: 0%;
-  transform: translateX(190px);
-}
-#hand{
-  left: 0px;
-}
-
-/* #foregroundClouds,
-#backgroundClouds {
-  transform: scale(0.6);
-  transform-origin: 0%;
-  
-} */
 #man{
-  width: 327px;
+  width: 251px;
+  left: 36px;
+  top: 1px;
 }
 .window{
-  width: 300px;
+  width: 160px;
   height: 600px;
 }

@@ -27,16 +27,16 @@ video {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 300px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
 }
 
 #main_content {
   position: absolute;
   top: -1px;
   left: -1px;
-  width: 300px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
 }
 
 .hidden {
@@ -47,8 +47,8 @@ video {
 #default_exit {
   top: -1px;
   left: -1px;
-  width: 300px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
   z-index: 500;
   cursor: pointer;
 }
@@ -86,26 +86,27 @@ video {
 #text_holder {
   color: #0000aa;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 30.5px;
-  line-height: 32px;
+  font-size: 23.6px;
+  line-height: 24px;
 }
 #h1,
 #h2,
 #h3 {
-  width: 280px;
+  width: 330px;
   left: 17px;
-  top: 67px;
+  top: 20px;
 }
 
 #h2{
-  line-height: 32px;
-  top: 39px;
+  font-size: 20.9px;
+  line-height: 22.5px;
+  top: 10px;
 }
 #h2 sup{
   vertical-align: middle;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 0;
-  margin-top: -20px;
+  margin-top: -12px;
   display: inline-block;
 }
 
@@ -122,90 +123,66 @@ video {
   font-size: 6px;
 }
 #h3{
-  font-size: 16.3px;
-  top: 388px;
+  font-size: 14.3px;
+  top: 59px;
   font-family: "ESKlarheitGrotesk Smbd";
 }
-
 #endframeBg {
   position: absolute;
   top: 170px;
-  height: 600px;
+  height: 90px;
   width: 100%;
   background: #FFFFFF;
 }
 
 #pinkRibbon {
   position: absolute;
-  bottom: 132px;
-  height: 10px;
-  width: 100%;
+  bottom: 0px;
+  height: 90px;
+  width: 10px;
   background: #00dcaa;
+  right: 214px;
 }
 
 #blueBottomCard {
   background-color: #0000aa;
-  width: 300px;
-  height: 132px;
-  left: 0px;
+  width: 214px;
+  height: 90px;
+  right: 0px;
   bottom: 0px;
 }
 
 
 
 #logo {
-  width: 104px;
+  width: 76px;
   height: auto;
-  left: 21px;
-  bottom: 60px;
+  right: 121px;
+  bottom: 33px;
   position: absolute;
   z-index: 11;
 }
 
 #cta {
-  width: 108px;
-  height: 31px;
-  bottom: 62px;
-  left: 171px;
+  width: 91px;
+  height: 28px;
+  bottom: 31px;
+  right: 17px;
   background-color: #00dcaa;
   border-radius: 5px;
   font-family: "ESKlarheitGrotesk Xbd";
   color: #0000aa;
-  font-size: 13.5px;
+  font-size: 12.5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.window{
-  width: 300px;
-  height: 600px;
-}
-
-#backgroundClouds{
-  top: 55px;
-  transform-origin: 0%;
-  transform: translateX(200px);
-}
-#foregroundClouds{
-  top: 122px;
-  transform-origin: 0%;
-  transform: translateX(190px);
-}
-#hand{
-  left: 0px;
-}
-
-/* #foregroundClouds,
-#backgroundClouds {
-  transform: scale(0.6);
-  transform-origin: 0%;
-  
-} */
 #man{
-  width: 327px;
+  width: 728px;
+  height: 90px;
 }
 .window{
-  width: 300px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
 }

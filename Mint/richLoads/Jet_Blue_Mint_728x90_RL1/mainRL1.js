@@ -24,14 +24,14 @@ function animate() {
 
   tl.set(['#h1, #h2'], {y:"20px"})
   tl.set(['#man'], {x:"300px"})
-  tl.set(['#cloud1'], {x:"100px", y:"-30px"})
-  tl.set(['#cloud2'], {x:"100px", y:"-30px"})
+  tl.set(['#cloud1'], {x:"-110px", y:"30px"})
+  tl.set(['#cloud2'], {x:"-110px", y:"30px"})
   tl.set(['#plane'], {x:"-290px", y:"40px"})
   
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
-  .to('#man', 2, { x: "-28", ease: Power1.easeOut}, 'frame1')
+  .to('#man', 2, { x: "0", ease: Power1.easeOut}, 'frame1')
   
   .addLabel('frame2', '5')
   .to('#h1', 0.5, { autoAlpha: 0, y:"20px", ease: Power1.easeOut }, "frame2")
