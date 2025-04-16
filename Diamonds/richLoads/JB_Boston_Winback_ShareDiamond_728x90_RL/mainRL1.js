@@ -30,13 +30,12 @@ function animate() {
     .staggerTo([".cls-1, .cls-3"],0, {opacity:0.2,fill: '#c9c9c9', ease: "bounce.in" }, 0.015,'frame1')
     .staggerTo('.cls-6',0, {fill: '#00e1ff', ease: "bounce.in" }, 0.009, 'frame1')
 
+    .to('#Layer_2', 3, {scale:0.145, transform: "translate3d(79px, -387px, 0)", rotationZ:0.1, force3D: true,  ease: "power1.in" }, 1, 'frame1+=4')
 
-    .addLabel('frame2', 3)
-    .to('#Layer_2', 3, {scale:2.35, transform: "translate3d(44px, 279px, 0)", rotationZ:0.1, force3D: true,  ease: "power1.in" }, "frame2+=.1")
+    .addLabel('frame2', 'frame1+=5')
     .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
-    .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=3")
-    .to('#desc,#desc1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=4")
-    .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut }, "frame2+=4")
+    .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
+    .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut }, "frame2+=2")
 
 }
 
